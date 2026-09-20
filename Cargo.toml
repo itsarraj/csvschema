@@ -1,0 +1,24 @@
+[package]
+name = "csvschema"
+version = "0.1.0"
+edition = "2021"
+description = "Infers a SQL CREATE TABLE statement from a real CSV file's actual data — column types and nullability, not just the first row"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/csvschema"
+readme = "README.md"
+keywords = ["csv", "sql", "schema", "cli", "type-inference"]
+categories = ["command-line-utilities", "development-tools"]
+
+[lib]
+name = "csvschema"
+path = "src/lib.rs"
+
+[[bin]]
+name = "csvschema"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+csv = "1"
