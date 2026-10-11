@@ -5,6 +5,12 @@ data — column types and nullability from every row, not a guess from the
 first one. The "load this CSV into Postgres" first step everyone
 hand-writes a throwaway script for.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
